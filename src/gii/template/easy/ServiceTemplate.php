@@ -20,7 +20,7 @@ class ServiceTemplate implements TemplateInterface
                 . "namespace biz\\{$relation}\\service;\n"
                 . "\n"
                 . "use biz\\{$relation}\\dao\\{$daoName};\n"
-                . "use gen\GenService;\n"
+                . "use Ohmangocat\GenBase\GenService;\n"
                 . "\n"
                 . "class {$className} extends GenService"
                 . "\n"

@@ -17,7 +17,7 @@ class DaoTemplate implements TemplateInterface
             . "namespace biz\\{$relation}\\dao;\n"
             . "\n"
             . "use biz\\{$relation}\\model\\{$model};\n"
-            . "use gen\GenDao;\n"
+            . "use Ohmangocat\GenBase\GenDao;\n"
             . "\n"
             . "class {$model}Dao extends GenDao"
             . "\n"

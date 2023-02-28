@@ -18,7 +18,7 @@ class ModelTemplate implements TemplateInterface
             . "\n"
             . "namespace biz\\{$relation}\\model;\n"
             . "\n"
-            . "use gen\GenModel;\n"
+            . "use Ohmangocat\GenBase\GenModel;\n"
             . "\n"
             . "class {$model} extends GenModel\n"
             . "{\n"
