@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Ohmangocat\Gen_base\gen\commands;
+namespace Ohmangocat\GenBase\commands;
 
 
-use Ohmangocat\Gen_base\gen\gii\GiiFactory;
-use Ohmangocat\Gen_base\gen\utils\ShellColorUtil;
+use Ohmangocat\GenBase\gii\GiiFactory;
+use Ohmangocat\GenBase\utils\ShellColorUtil;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ohmangocat\Gen_base\gen\db;
+namespace Ohmangocat\GenBase\db;
 
 use Phinx\Migration\AbstractMigration;
 use Phinx\Migration\MigrationInterface;

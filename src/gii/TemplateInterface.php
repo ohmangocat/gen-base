@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Ohmangocat\Gen_base\gen\gii;
+namespace Ohmangocat\GenBase\gii;
 
 
 interface TemplateInterface

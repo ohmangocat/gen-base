@@ -1,6 +1,6 @@
 <?php
 
-namespace Ohmangocat\Gen_base\gen\db;
+namespace Ohmangocat\GenBase\db;
 
 class Table extends \Phinx\Db\Table
 {

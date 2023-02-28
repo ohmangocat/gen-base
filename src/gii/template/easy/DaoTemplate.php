@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Ohmangocat\Gen_base\gen\gii\template\easy;
+namespace Ohmangocat\GenBase\gii\template\easy;
 
 
-use Ohmangocat\Gen_base\gen\gii\TemplateInterface;
+use Ohmangocat\GenBase\gii\TemplateInterface;
 
 class DaoTemplate implements TemplateInterface
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Ohmangocat\Gen_base\gen\exception;
+namespace Ohmangocat\GenBase\exception;
 
-use Ohmangocat\Gen_base\gen\GenException;
+use Ohmangocat\GenBase\GenException;
 
 class ForbiddenHttpException extends GenException
 {

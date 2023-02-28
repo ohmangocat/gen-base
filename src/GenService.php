@@ -1,7 +1,7 @@
 <?php
 
 
-namespace gen;
+namespace Ohmangocat\GenBase;
 
 
 class GenService

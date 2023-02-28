@@ -1,6 +1,6 @@
 <?php
 
-namespace gen;
+namespace Ohmangocat\GenBase;
 
 
 use Illuminate\Database\Eloquent\Collection;

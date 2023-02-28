@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Ohmangocat\Gen_base\gen\utils;
+namespace Ohmangocat\GenBase\utils;
 
 
 class ShellColorUtil

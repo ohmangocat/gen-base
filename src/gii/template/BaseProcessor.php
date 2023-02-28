@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Ohmangocat\Gen_base\gen\gii\template;
+namespace Ohmangocat\GenBase\gii\template;
 
 
 abstract class BaseProcessor

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ohmangocat\Gen_base\gen\traits;
+namespace Ohmangocat\GenBase\traits;
 
 use support\Response;
 

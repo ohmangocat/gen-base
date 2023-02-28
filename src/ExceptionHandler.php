@@ -1,6 +1,6 @@
 <?php
 
-namespace gen;
+namespace Ohmangocat\GenBase;
 
 use Ohmangocat\Gen_base\gen\traits\JsonTrait;
 use Illuminate\Database\Eloquent\ModelNotFoundException;

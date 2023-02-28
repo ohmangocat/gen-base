@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Ohmangocat\Gen_base\gen;
+namespace Ohmangocat\GenBase;
 
 
 use Ohmangocat\Gen_base\gen\traits\JsonTrait;

@@ -9,9 +9,9 @@ class Install
      * @var array
      */
     protected static $pathRelation = array (
-  'config/plugin/ohmangocat/gen-base' => 'config/plugin/ohmangocat/gen-base',
+        'config/plugin/ohmangocat/gen-base' => 'config/plugin/ohmangocat/gen-base',
         'gen/helpers.php' => 'gen/helpers.php',
-);
+    );
 
     /**
      * Install
