@@ -1,0 +1,13 @@
+{
+  "name": "ohmangocat/gen-base",
+  "type": "library",
+  "license": "MIT",
+  "description": "Webman plugin ohmangocat/gen-base",
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Ohmangocat\\GenBase\\": "src"
+    }
+  }
+}
