@@ -4,6 +4,7 @@
   "license": "MIT",
   "description": "Webman plugin ohmangocat/gen-base",
   "require": {
+    "webman/console": "^1.2"
   },
   "autoload": {
     "psr-4": {
