@@ -1,0 +1,23 @@
+{
+  "name": "ohmangocat/gen-base",
+  "type": "library",
+  "license": "MIT",
+  "description": "Webman plugin ohmangocat/gen-base",
+  "require": {
+    "psr/container": "^1.1.1",
+    "illuminate/database": "^10.1",
+    "illuminate/pagination": "^10.1",
+    "illuminate/events": "^10.1",
+    "symfony/var-dumper": "^6.2",
+    "php-di/php-di": "^6",
+    "doctrine/annotations": "^1.14",
+    "workerman/validation": "^3.0",
+    "illuminate/redis": "^10.1",
+    "symfony/cache": "^6.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ohmangocat\\GenBase\\": "src"
+    }
+  }
+}
