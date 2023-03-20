@@ -18,6 +18,7 @@ trait DaoTrait
         return Container::get($this->setModel());
     }
 
+
     public function save($data)
     {
         return $this->getModel()::create($data);
@@ -168,4 +169,36 @@ trait DaoTrait
     {
         return $this->update($id, [ $field => $value]);
     }
+
+    public function read($id, ?array $field = [], ?array $with = [])
+    {
+        if (is_array($id)) {
+            $where = $id;
+        } else {
+            $where = [$this->getModel()->getKeyName(), $id];
+        }
+        return $this->getModel()::where($where)->select($field ?? ["*"])->when(count($with), function ($query) use ($with) {
+            $query->with($with);
+        })->first();
+    }
+
+    public function value(array $where, ?string $field = '')
+    {
+        return $this->getModel()::where($where)->value($field ?? $this->getModel()->getKeyName());
+    }
+
+    public function exist($map, string $field = ''): bool
+    {
+        if (!is_array($map) && empty($field)) $field = $this->getModel()->getKeyName();
+        $map = !is_array($map) ? [$field => $map] : $map;
+        return $this->getModel()::where($map)->exists();
+    }
+
+
+    public function pluck(array $where, string $field, string $key = null)
+    {
+        return $this->getModel()::where($where)->pluck($field ?? $this->getModel()->getKeyName(), $key);
+    }
+
+
 }

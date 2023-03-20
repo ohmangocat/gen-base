@@ -4,6 +4,7 @@ namespace Ohmangocat\GenBase\Exception;
 
 use Ohmangocat\GenBase\Core\GenException;
 use Ohmangocat\GenBase\Traits\JsonTrait;
+use Respect\Validation\Exceptions\ValidationException;
 use Webman\Exception\ExceptionHandler as WebmanExceptionHandler;
 use Webman\Http\Request;
 use Webman\Http\Response;
@@ -66,12 +67,11 @@ class ExceptionHandler extends WebmanExceptionHandler
     public function solveExtraException(Throwable $e)
     {
         $this->errorMessage = $e->getMessage();
-//        if ($e instanceof ValidateException) {
-//            $this->statusCode = 400;
-//        } else {
-//            $this->statusCode = 500;
-//        }
-        $this->statusCode = 500;
+        if ($e instanceof ValidationException) {
+            $this->statusCode = 400;
+        } else {
+            $this->statusCode = 500;
+        }
     }
 
     /**
