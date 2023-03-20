@@ -175,7 +175,7 @@ trait DaoTrait
         if (is_array($id)) {
             $where = $id;
         } else {
-            $where = [$this->getModel()->getKeyName(), $id];
+            $where = [$this->getModel()->getKeyName() => $id];
         }
         return $this->getModel()::where($where)->select($field ?? ["*"])->when(count($with), function ($query) use ($with) {
             $query->with($with);
