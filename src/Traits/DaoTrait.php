@@ -177,9 +177,10 @@ trait DaoTrait
         } else {
             $where = [$this->getModel()->getKeyName() => $id];
         }
-        return $this->getModel()::where($where)->select($field ?? ["*"])->when(count($with), function ($query) use ($with) {
+        $result = $this->getModel()::where($where)->select($field ?? ["*"])->when(count($with), function ($query) use ($with) {
             $query->with($with);
         })->first();
+        return is_null($result) ? $result : $result->toArray();
     }
 
     public function value(array $where, ?string $field = '')
