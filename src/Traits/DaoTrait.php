@@ -197,7 +197,7 @@ trait DaoTrait
 
     public function pluck(array $where, string $field, string $key = null)
     {
-        return $this->getModel()::where($where)->pluck($field ?? $this->getModel()->getKeyName(), $key);
+        return $this->getModel()::where($where)->pluck($field ?? $this->getModel()->getKeyName(), $key)->toArray();
     }
 
 
