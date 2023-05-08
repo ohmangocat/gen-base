@@ -148,7 +148,7 @@ trait DaoTrait
     }
 
     /**
-     * 更新一条数据
+     * 按条件更新数据
      * @param int $id
      * @param array $data
      * @return bool
