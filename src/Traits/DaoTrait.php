@@ -149,15 +149,15 @@ trait DaoTrait
 
     /**
      * 按条件更新数据
-     * @param int $id
+     * @param int | array $id
      * @param array $data
      * @return bool
      */
-    public function update(int $id, array $data): bool
+    public function update($id, array $data): bool
     {
         $this->filterExecuteAttributes($data, true);
-        if(is_array($data)) {
-            return $this->getModel()::query()->where($data)->update($data) > 0;
+        if(is_array($id)) {
+            return $this->getModel()::query()->where($id)->update($data) > 0;
         }
         return $this->getModel()::find($id)->update($data) > 0;
     }
