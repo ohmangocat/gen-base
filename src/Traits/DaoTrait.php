@@ -156,6 +156,9 @@ trait DaoTrait
     public function update(int $id, array $data): bool
     {
         $this->filterExecuteAttributes($data, true);
+        if(is_array($data)) {
+            return $this->getModel()::query()->where($data)->update($data) > 0;
+        }
         return $this->getModel()::find($id)->update($data) > 0;
     }
     /**
